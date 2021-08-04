@@ -42,7 +42,7 @@ body {
 .section-accordion {
 	background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 	height: 800px;
-	width: 1440px;
+	width: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -58,6 +58,7 @@ body {
 	min-height: 549px;
 	position: relative;
 	z-index: 1;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .accordion-img {
@@ -70,7 +71,7 @@ body {
 .accordion-img-box {
 	position: absolute;
 	left: -10%;
-	top: 39%;
+	top: 40%;
 }
 
 .accordion-img-illustation {
@@ -78,9 +79,6 @@ body {
 	height: 100%;
 	background-repeat: no-repeat;
 	background-position: -727% 43%;
-
-	/* left: -85px;
-	top: 70px; */
 }
 
 .divider {
@@ -108,7 +106,7 @@ li {
 
 .accordion-content {
 	margin: auto auto;
-	padding: 4rem 8rem;
+	padding: 4rem 6.5rem;
 }
 
 .accordion-items {
@@ -148,4 +146,73 @@ li {
 
 .arrow-up {
 	transform: rotate(180deg);
+}
+
+.attribution {
+	margin-top: 2rem;
+	text-align: center;
+	background-color: hsl(240, 73%, 65%);
+	padding: 1.5rem;
+	color: #fff;
+}
+
+.attribution a:link,
+.attribution a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 90em) {
+}
+
+@media (max-width: 24em) {
+	html {
+		font-size: 56.25%;
+	}
+	.section-accordion {
+		height: 800px;
+		width: 365px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container {
+		background-color: #ffffff;
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 0 3.5rem;
+		border-radius: 24px;
+		position: relative;
+		z-index: 1;
+		/* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); */
+	}
+
+	.accordion-content {
+		margin: auto auto;
+		padding: 2rem 2.5rem;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.accordion-img {
+		background-image: url('../images/bg-pattern-mobile.svg');
+		background-position: center 0px;
+		background-repeat: no-repeat;
+		height: 125px;
+	}
+
+	.accordion-img-box {
+		display: none;
+	}
+
+	.accordion-img-illustation {
+		background-image: url('../images/illustration-woman-online-mobile.svg');
+		background-repeat: no-repeat;
+		background-position: 9px -9px;
+		padding-top: 200px;
+		margin-top: -96px;
+	}
 }
