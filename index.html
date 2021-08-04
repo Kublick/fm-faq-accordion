@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<title>Frontend Mentor | FAQ Accordion Card</title>
+	</head>
+	<body>
+		<main>
+			<section class="section-accordion">
+				<div class="container">
+					<div class="accordion-img">
+						<div class="accordion-img-illustation"></div>
+						<img
+							src="./images/illustration-box-desktop.svg"
+							alt="woman looking desktop computer"
+							class="accordion-img-box"
+						/>
+					</div>
+					<div class="accordion-content">
+						<h1>FAQ</h1>
+						<ul class="accordion-items">
+							<li class="divider">
+								<div class="accordion-header">
+									<p class="accordion-title">
+										How many team members can I invite?
+									</p>
+									<button class="btn">
+										<img
+											src="./images/icon-arrow-down.svg"
+											alt="arrow icon"
+											class=""
+										/>
+									</button>
+								</div>
+								<p class="hidden-box accordion-text">
+									You can invite up to 2 additional users on the Free plan.
+									There is no limit on team members for the Premium plan.
+								</p>
+							</li>
+
+							<li class="divider open">
+								<div class="accordion-header">
+									<p class="accordion-title">
+										What is the maximum file upload size?
+									</p>
+									<button class="btn">
+										<img
+											src="./images/icon-arrow-down.svg"
+											alt="arrow icon"
+											class="icon"
+										/>
+									</button>
+								</div>
+								<p class="hidden-box accordion-text">
+									No more than 2GB. All files in your account must fit your
+									allotted storage space.
+								</p>
+							</li>
+
+							<li class="divider">
+								<div class="accordion-header">
+									<p class="accordion-title">How do I reset my password?</p>
+									<button class="btn">
+										<img
+											src="./images/icon-arrow-down.svg"
+											alt="arrow icon"
+											class="icon"
+										/>
+									</button>
+								</div>
+								<p class="hidden-box accordion-text">
+									Click “Forgot password” from the login page or “Change
+									password” from your profile page. A reset link will be emailed
+									to you.
+								</p>
+							</li>
+							<li class="divider">
+								<div class="accordion-header">
+									<p class="accordion-title">Can I cancel my subscription?</p>
+									<button class="btn">
+										<img
+											src="./images/icon-arrow-down.svg"
+											alt="arrow icon"
+											class="icon"
+										/>
+									</button>
+								</div>
+								<p class="hidden-box accordion-text">
+									Yes! Send us a message and we’ll process your request no
+									questions asked.
+								</p>
+							</li>
+							<li class="divider">
+								<div class="accordion-header">
+									<p class="accordion-title">
+										Do you provide additional support?
+									</p>
+									<button class="btn">
+										<img
+											src="./images/icon-arrow-down.svg"
+											alt="arrow icon"
+											class="icon"
+										/>
+									</button>
+								</div>
+								<p class="hidden-box accordion-text">
+									Chat and email support is available 24/7. Phone lines are open
+									during normal business hours.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
